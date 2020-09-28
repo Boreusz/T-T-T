@@ -9,6 +9,29 @@
 <body>
     <div class="wrapper">
         <main>
+            <div class="pop-up_wrapper" id="informator">
+                <div class="pop-up">
+                    <div class="span-wrapper" id="result-information"></div>
+                    <div class="pop-up_controls">
+                        <button class="pop-up_control-button continue">Continue</button>
+                        <button class="pop-up_control-button reset">Reset the game</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up_wrapper" id="start">
+                <div class="pop-up">
+                    <div class="span-wrapper">
+                        <h2>Name the players:</h2>
+                        <form>
+                            <input type="text" placeholder="Player1" id="player-one">
+                            <input type="text" placeholder="Player2" id="player-two">
+                        </form>
+                    </div>
+                    <div class="pop-up_controls">
+                        <button class="pop-up_control-button" id="game-starter">Start the game!</button>
+                    </div>
+                </div>
+            </div>
             <div id="title-wrapper">
                 <a id="title" href="#">
                     <h1 >Tic Tac Toe</h1>
@@ -18,15 +41,16 @@
             </div>
             <div id="score">
                 <div class="players" id="player-one">
-                    <span class="score">0</span>
-                    <span class="name">Player1</span>
+                    <span class="score" id="pone">0</span>
+                    <span class="name" id="poneName">Player1</span>
                 </div>
                 <div class="players" id="player-two">
-                    <span class="score">0</span>
-                    <span class="name">Player2</span>
+                    <span class="score" id="ptwo">0</span>
+                    <span class="name" id="ptwoName">Player2</span>
                 </div>
             </div>
             <div id="gameboard">
+                <div class="grid-item" id="0"></div>
                 <div class="grid-item" id="1"></div>
                 <div class="grid-item" id="2"></div>
                 <div class="grid-item" id="3"></div>
@@ -35,11 +59,10 @@
                 <div class="grid-item" id="6"></div>
                 <div class="grid-item" id="7"></div>
                 <div class="grid-item" id="8"></div>
-                <div class="grid-item" id="9"></div>
             </div>
             <div id="controls">
-                <button class="control-button" id="reset">Reset the game</button>
-                <button class="control-button" id="change">Change mode</button>
+                <button class="control-button reset" >Reset the game</button>
+                <button class="control-button" id="change">Change mode*</button>
             </div>
         </main>
     </div>
