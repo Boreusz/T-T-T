@@ -54,7 +54,11 @@ span {
     font-size: 60px;
     font-weight: 700;
     display: flex;
-
+}
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
 }
 .line {
     width: 60%;
@@ -62,9 +66,50 @@ span {
     background-color: rgb(223, 223, 223);
     margin: 0 auto;
 }
+#start{
+    visibility: visible;
+}
+#informator{
+    visibility: hidden;
+}
+.pop-up_wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.205);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-up {
+    width: 450px;
+    height: 300px;
+    background-color: aliceblue;
+    -webkit-box-shadow: 0px 10px 55px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 55px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 55px 0px rgba(0,0,0,0.5);
+}
+
+.span-wrapper {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.span-wrapper span {
+    font-size: 40px;
+    font-weight: 500;
+}
+.span-wrapper input {
+    height: 40px;
+    margin: 10px;
+}
 #title-wrapper {
     text-align: center;
-    margin: 20px 0 40px;
+    padding: 20px 0 40px;
     color: rgb(150, 150, 150);
     font-size: 12px;
 }
@@ -81,7 +126,7 @@ span {
     width: 300px;
     margin: 0 auto 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .score{
     display: flex;
@@ -123,5 +168,16 @@ span {
     width: 200px;
     height: 40px;
     font-size: 20px;
+    font-weight: 500;
+}
+.pop-up_controls{
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 0;
+}
+.pop-up_control-button{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
     font-weight: 500;
 }
